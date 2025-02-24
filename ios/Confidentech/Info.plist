@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Location Permission -->
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>We need your location to provide map directions.</string>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>We need your location to provide map directions.</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>We need your location to provide map directions.</string>
+
+  <!-- Camera Permission -->
+  <key>NSCameraUsageDescription</key>
+  <string>This app requires access to the camera for photo and video functionality.</string>
+
+  <!-- General App Configuration -->
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleDisplayName</key>
+  <string>Confidentech</string>
+  <key>CFBundleExecutable</key>
+  <string>$(EXECUTABLE_NAME)</string>
+  <key>CFBundleIdentifier</key>
+  <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleName</key>
+  <string>$(PRODUCT_NAME)</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>$(MARKETING_VERSION)</string>
+  <key>CFBundleSignature</key>
+  <string>????</string>
+  <key>CFBundleVersion</key>
+  <string>$(CURRENT_PROJECT_VERSION)</string>
+  <key>LSRequiresIPhoneOS</key>
+  <true/>
+
+  <!-- App Transport Security -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
+    <key>NSAllowsArbitraryLoads</key>
+    <false/>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+  </dict>
+
+  <!-- Launch Screen -->
+  <key>UILaunchStoryboardName</key>
+  <string>LaunchScreen</string>
+
+  <!-- Device Requirements -->
+  <key>UIRequiredDeviceCapabilities</key>
+  <array>
+    <string>arm64</string>
+  </array>
+
+  <!-- Supported Orientations -->
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+
+  <!-- Status Bar Appearance -->
+  <key>UIViewControllerBasedStatusBarAppearance</key>
+  <false/>
+
+  <!-- Push Notification Permissions -->
+  <key>UIBackgroundModes</key>
+  <array>
+    <string>remote-notification</string>
+  </array>
+
+  <!-- Firebase AppDelegate Proxy -->
+  <key>FirebaseAppDelegateProxyEnabled</key>
+  <false/>
+</dict>
+</plist>
